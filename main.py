@@ -8,7 +8,7 @@ def main():
     while (total < 100):
         rdnum = random.randint(0, 10)
         if  total + rdnum > 100:
-            numbers.append(num)
+            numbers.append(rdnum)
             break
         else:
             numbers.append(rdnum)
