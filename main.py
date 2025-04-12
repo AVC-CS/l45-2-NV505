@@ -7,8 +7,13 @@ def main():
     
     while (total < 100):
         rdnum = random.randint(0, 10)
-        numbers.append(rdnum)
-        total += rdnum
+        if  total + rdnum > 100:
+            numbers.append(num)
+            break
+        else:
+            numbers.append(rdnum)
+            total += rdnum
+        
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
